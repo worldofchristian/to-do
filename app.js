@@ -40,6 +40,10 @@ window.addEventListener('load', () => {
         // delete buttons
         const item_actions_element = document.createElement("div");
         item_actions_element.classList.add("actions");
+        
+        const item_edit_element = document.createElement("button");
+        item_edit_element.classList.add("edit");
+        item_edit_element.innerHTML = "Edit";
 
         const item_delete_element = document.createElement("button");
         item_delete_element.classList.add("delete");
@@ -53,6 +57,19 @@ window.addEventListener('load', () => {
         
         // resets the input field
         input.value = "";
+        
+        // function for editing list items
+        item_edit_element.addEventListener('click', () => {
+            if (item_edit_element.innerText.toLowerCase() ==
+            "edit") {
+                item_input_element.removeAttribute('readonly');
+                item_input_element.focus();
+                item_edit_element.innerText = "Save";
+            } else {
+                item_input_element.setAttribute("readonly","readonly");
+                item_edit_element = "Edit";
+            }
+        });
         
         // function for removing list items
         item_delete_element.addEventListener("click", () => {
