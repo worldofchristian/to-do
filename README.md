@@ -1,2 +1,1 @@
-# to-do
-javascript to-do list 
+to-do list for the odin project
