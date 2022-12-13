@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+}
+
+footer {
+    padding: 2rem 2rem;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#to-do {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-item {
+    flex: 1 1 0%;
+    background-color: rgb(245, 245, 245);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+#new-item-submit {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: teal;
+    transition: 0.4s;
+}
+
+#new-item-submit:hover {
+    opacity: 0.6;
+}
+
+main {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.to-do-list {
+    padding: 1rem;
+}
+
+.to-do-list {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+#items .item {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(245, 245, 245);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+#items .item .content .text {
+    width: 100%;
+    font-size: 1.2rem;
+    display: block;
+}
+
+#items .item .content .text:not(:read-only) {
+    color: teal
+}
+
+#items .item .action {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.item .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.item .actions button:hover {
+    opacity: 0.6;
+}
+
+.item .actions .delete {
+    color: teal;
+}
