@@ -41,9 +41,9 @@ window.addEventListener('load', () => {
         const item_actions_element = document.createElement("div");
         item_actions_element.classList.add("actions");
 
-        const item_edit_element = document.createElement("button");
-        item_edit_element.classList.add("edit");
-        item_edit_element.innerHTML = "Edit";
+        //const item_edit_element = document.createElement("button");
+        //item_edit_element.classList.add("edit");
+        //item_edit_element.innerHTML = "Edit";
 
         const item_delete_element = document.createElement("button");
         item_delete_element.classList.add("delete");
