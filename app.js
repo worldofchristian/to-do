@@ -53,19 +53,6 @@ window.addEventListener('load', () => {
         
         // resets the input field
         input.value = "";
-
-        // function for editing list items
-        item_edit_element.addEventListener('click', () => {
-            if (item_edit_element.innerText.toLowerCase() ==
-            "edit") {
-                item_input_element.removeAttribute('readonly');
-                item_input_element.focus();
-                item_edit_element.innerText = "Save";
-            } else {
-                item_input_element.setAttribute("readonly","readonly");
-                item_edit_element = "Edit";
-            }
-        });
         
         // function for removing list items
         item_delete_element.addEventListener("click", () => {
